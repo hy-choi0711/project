@@ -18,6 +18,7 @@ header {
   align-items: center;
   position: sticky;
   top: 0;
+  z-index: 3;
 }
 
 header h1 {
@@ -50,18 +51,15 @@ nav ul li a {
   color: #777777;
 }
 
-.banner {
-  width: 100%;
-  height: 500px;
-  border: none;
-  margin-top: 20px;
-}
-
 .recommand-songs {
   background-color: #e9e9e9;
   margin-top: 50px;
   padding: 50px;
   height: 600px;
+}
+
+.recommand-songs.white {
+  background-color: #efefef;
 }
 
 .title {
@@ -75,7 +73,7 @@ nav ul li a {
   justify-content: space-between;
 }
 
-.music {
+.music, .album {
   margin-top: 50px;
   padding: 20px;
   background-color: #dddddd;
@@ -89,12 +87,13 @@ nav ul li a {
   border-radius: 20px;
 }
 
-.music img {
+.music img, .album img {
   width: 200px;
   height: 200px;
   position: absolute;
   top: -100px;
   border-radius: 20px;
+  z-index: 1;
   -webkit-user-drag: none;
   -khtml-user-drag: none;
   -moz-user-drag: none;
@@ -107,29 +106,72 @@ nav ul li a {
   left: 45px;
 }
 
-.music p, .music h1, .music h2 {
+.music p, .music h1, .music h2, .album p, .album h1, .album h2 {
   margin: 0;
 }
 
-.music h1 {
+.music h1, .album h1 {
   font-size: 20px;
   font-weight: 300;
 }
 
-.music h2 {
+.music h2, .album h2 {
   font-size: 15px;
   font-weight: 200;
 }
 
-.music p {
+.music p, .album p {
   margin: 20px 0;
   font-weight: 100;
 }
 
-.music a {
+.music a, .album a {
   text-decoration: none;
   background-color: #3f3f3f;
   padding: 10px;
   border-radius: 15px;
   color: #efefef;
+}
+
+.album img {
+  left: 20px;
+}
+
+.album .cd {
+  width: 200px;
+  height: 190px;
+  top: -85px;
+  z-index: 0;
+  left: 100px;
+}
+
+.rank-badge {
+  padding: 3px 7px;
+  border-radius: 13px;
+  color: #efefef;
+  font-weight: 600;
+  position: relative;
+  bottom: 235px;
+  left: 90px;
+  z-index: 2;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
+
+.rank-badge.first {
+  background-color: #e9482c;
+}
+
+.rank-badge.second {
+  background-color: #76b7c0;
+}
+
+.rank-badge.third {
+  background-color: #9c603d;
+}
+
+.rank-badge.fourth-over {
+  background-color: #7a7a7a;
 }
