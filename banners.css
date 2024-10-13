@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d5dde7;
+  margin: 0;
+  padding: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none
+}
+
+.content {
+  margin: 0 auto;
+  display: flex;
+  width: 1500px;
+}
+
+.Title {
+  margin: 50px;
+  margin-left: 0;
+  width: 1000px;
+  display: block;
+}
+
+.Title h1 {
+  font-size: 80px;
+  margin-top: 10px;
+  font-weight: 100;
+}
+
+.Title h4 {
+  font-size: 20px;
+  margin-bottom: 0;
+  font-weight: 300;
+}
+
+#month {
+  font-size: 25px;
+  font-weight: 600;
+  color: #1139a4;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+#song {
+  font-size: 23px;
+  font-weight: 500;
+}
+
+.Title a {
+  background-color: #1139a4;
+  color: #efefef;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 20px;
+}
+
+img {
+  width: 400px;
+  height: 400px;
+  margin-top: 40px;
+  margin-left: 50px;
+  box-shadow: 10px 10px 2px #777c81;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+}
