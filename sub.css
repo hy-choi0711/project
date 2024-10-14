@@ -106,6 +106,14 @@ nav ul li a {
   left: 45px;
 }
 
+.music-explain.two-lines p {
+  margin: 6px 0 20px 0;
+}
+
+.music-explain.three-lines p {
+  margin: 0 0 20px 0;
+}
+
 .music p, .music h1, .music h2, .album p, .album h1, .album h2 {
   margin: 0;
 }
