@@ -18,6 +18,7 @@ header {
   align-items: center;
   position: sticky;
   top: 0;
+  z-index: 3;
 }
 
 header h1 {
@@ -48,6 +49,20 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: #777777;
+}
+
+.chosen-now {
+  color: #363636;
+}
+
+header .under-line {
+  background-color: #363636;
+  width: 30px;
+  height: 2px;
+  position: absolute;
+  bottom: 26px;
+  right: 630.7px;
+  border-radius: 40px;
 }
 
 .banner {
@@ -132,4 +147,61 @@ nav ul li a {
   padding: 10px;
   border-radius: 15px;
   color: #efefef;
+}
+
+.not.recommand-songs {
+  background-color: #efefef;
+  height: 700px;
+}
+
+.not.recommand-songs ul {
+  height: 300px;
+  list-style-type: none;
+  display: grid;
+  grid-template: repeat(4, 70px) / repeat(3, 20%);
+  gap: 30px;
+  justify-content: center;
+}
+
+.not.recommand-songs ul li {
+  background-color: #c4c4c4;
+  border-radius: 30px;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 23px;
+  font-weight: 200;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.not.recommand-songs ul li .hot {
+  background-color: #ee442e;
+  font-size: 15px;
+  border-radius: 20px;
+  width: 45px;
+  font-weight: 600;
+  color: #efefef;
+  position: absolute;
+  top: 10px;
+  right: 100px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.not.recommand-songs ul li .new {
+  background-color: #d1982f;
+  font-size: 15px;
+  border-radius: 20px;
+  width: 45px;
+  font-weight: 600;
+  color: #efefef;
+  position: absolute;
+  top: 10px;
+  right: 100px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
 }
